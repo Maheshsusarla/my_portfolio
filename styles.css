@@ -1,0 +1,255 @@
+.navbar{
+    background: #ffffff;
+}
+body{
+    font-family: "Comfortaa", sans-serif;
+}
+#home{
+    height: 85vh;
+    width: 100%;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0px;
+}
+.homecontent{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home1{
+    transition: 5s;
+    animation: home;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes home{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.myimg{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.heading{
+    width: fit-content;
+    margin: 0px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.homecontent p{
+    font-weight: 500;
+    font-size: 23px;
+}
+.span{
+    font-weight: 800;
+    font-size: 35px;
+}
+.btn{
+    background: black;
+    color: white;
+    padding: 0px 15px;
+}
+#about-me{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+.about1,.about2{
+    width: 47%;
+}
+.about1{
+    text-align: center;
+}
+.about1 img{
+    border-radius: 10px;
+}
+#skills{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+.skills-1{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    display: flex;
+    min-height: 100px;
+}
+.skills-1 .p1{
+    width: 25%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 20px;
+}
+.skills-1 .p2{
+    width: 75%;
+    font-size: 23px;
+    padding: 20px;
+}
+.p2 ul li{
+    padding-left: 30px ;
+}
+.skills-list{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.project{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding:15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.project .p1{
+    width: 50%;
+    text-align: center;
+}
+.project .p2{
+    width: 50%;
+}
+.project .p1 img{
+    border-radius: 10px;
+}
+#contact-me{
+    width: 85%;
+    margin: auto;
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+.contact-1{
+    background-color: #F44336;
+    width: 30%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-2{
+    background-color: #017784;
+    width: 30%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-2 div a{
+    text-decoration: none;
+    color: white;
+}
+.contact-1 div a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+.contact-1:hover{
+    cursor: pointer;
+}
+.contact-2:hover{
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+}
+@media only screen and (max-width:768px){
+    .navbar{
+        width: 100%;
+        display: flex;
+    }
+    #about-me{
+        flex-direction: column;
+    }
+    .about1,.about2{
+        width: 100%;
+    }
+    .about1{
+        text-align: center;
+    }
+    .about1 img{
+        border-radius: 10px;
+    }
+    .about2{
+        padding: 10px;
+        margin-top: 15px;
+        text-align: left;
+    }
+    .skills-1{
+        flex-direction: column;
+    }
+    .skills-list{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .skills-1 .p1{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .skills-1 .p2{
+        width: 100%;
+        font-size: 23px;
+    }
+    .project{
+        flex-direction: column;
+    }
+    .project .p1{
+        width: 100%;
+    }
+    .project .p2{
+        width: 100%;
+    }
+    .contact-1{
+        flex-direction: column;
+    }
+    .contact-1{
+        width: 100%;
+    }
+    .contact-2{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+    .button{
+        flex-direction: column;
+    }
+}
